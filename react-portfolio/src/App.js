@@ -1,6 +1,7 @@
 // Imports components
 import { Routes, Route } from "react-router-dom";
 import Header from "./pages/Header";
+import Footer from "./pages/Footer";
 import Home from "./pages/Home";
 
 // Base App function to bring in the components and routes
@@ -15,7 +16,7 @@ function App() {
         <Route path="/contact" element={<Contact />} /> */}
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
