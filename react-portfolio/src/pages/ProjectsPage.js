@@ -45,7 +45,7 @@ const ProjectsPage = ({ name }) => {
     },
     {
       i: "6",
-      title: "Music Search App",
+      title: "Music App",
       description:
         "A web app that allows users to search for a song, artist or band and see a dynamically generated link to a relevant YouTube video to said song/musician. We also display 5 similarly named artists in the 'Similar to your search' section.",
       linkApp: "https://zaitken1.github.io/music-app/",
