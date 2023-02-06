@@ -26,7 +26,9 @@ const Contact = () => {
           </a>
         </li>
         <li>
-          <a href="https://github.com/sbillsborough">GitHub</a>
+          <a href="https://github.com/sbillsborough" target="_blank">
+            GitHub
+          </a>
         </li>
         <li>
           <a
