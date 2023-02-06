@@ -44,11 +44,12 @@ const ProjectsPage = ({ name }) => {
       linkGithub: "https://github.com/sbillsborough/Bootstrap-Portfolio",
     },
     {
-      i: "5",
-      title: "Bootstrap Portfolio",
-      description: "A Web Developer Portfolio built in Bootstrap.",
-      linkApp: "https://sbillsborough.github.io/Bootstrap-Portfolio/",
-      linkGithub: "https://github.com/sbillsborough/Bootstrap-Portfolio",
+      i: "6",
+      title: "Music App",
+      description:
+        "A web app that allows users to search for a song, artist or band and see a dynamically generated link to a relevant YouTube video to said song/musician. We also display 5 similarly named artists in the 'Similar to your search' section.",
+      linkApp: "https://zaitken1.github.io/music-app/",
+      linkGithub: "https://github.com/zaitken1/music-app",
     },
   ]);
 
