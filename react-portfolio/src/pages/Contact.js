@@ -22,7 +22,7 @@ const Contact = () => {
             href="https://docs.google.com/document/d/1jK2UPUtZUg3-36E1klYv7rK2zEPrgHrOlqdM6zpWD20/edit?usp=sharing"
             target="_blank"
           >
-            My CV
+            CV
           </a>
         </li>
         <li>
