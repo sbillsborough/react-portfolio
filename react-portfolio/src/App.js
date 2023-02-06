@@ -1,12 +1,13 @@
 // Imports components
 import { Routes, Route } from "react-router-dom";
+import Header from "./pages/Header";
 import Home from "./pages/Home";
 
 // Base App function to bring in the components and routes
 function App() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
 
       <Routes>
         <Route path="/" element={<Home />} />
