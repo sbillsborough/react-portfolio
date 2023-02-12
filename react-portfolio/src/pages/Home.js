@@ -5,8 +5,8 @@ import headshot from "../resources/img/headshot.jpg";
 
 function Home() {
   return (
-    <div>
-      <img src={headshot} alt="Scott Billsborough" />
+    <div className="home-wrapper">
+      <img src={headshot} className="headshot" alt="Scott Billsborough" />
       <h1>Web Developer</h1>
       <p>Hi, I'm Scott and I am a Web Developer. Welcome to my portfolio.</p>
     </div>
