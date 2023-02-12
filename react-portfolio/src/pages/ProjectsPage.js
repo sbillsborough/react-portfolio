@@ -17,8 +17,8 @@ const ProjectsPage = ({ name }) => {
       title: "Random Password Generator",
       description:
         "A random password generator that produces a password based on the users requirments. These include required length, upper/lowercase characters, special characters and numbers. Also checks to see if the password is at least 10 characters long.",
-      linkApp: "https://stark-reaches-12893.herokuapp.com/",
-      linkGithub: "https://github.com/Noemiegrau/food-forward",
+      linkApp: "https://sbillsborough.github.io/random-password-generator/",
+      linkGithub: "https://github.com/sbillsborough/random-password-generator",
     },
     {
       i: "3",

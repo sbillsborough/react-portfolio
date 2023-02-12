@@ -25,6 +25,7 @@ header {
   background: lightskyblue;
   color: beige;
   padding: 0 3%;
+  height: 50px;
 }
 
 nav a {
@@ -40,8 +41,6 @@ nav a.active {
   text-decoration: underline;
 }
 
-/* End of NavBar styling */
-
 /* Home Page styling */
 
 div .home-wrapper {
@@ -55,8 +54,40 @@ div .home-wrapper {
   width: 300px;
 }
 
+/* Projects Page Styling */
+
+#spacecards {
+  text-align: center;
+  display: flex;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+#card-projects {
+  height: 350px;
+  align-items: center;
+}
+
+#btns-projects {
+  display: flex;
+}
+
+.btn-primary {
+  background: lightskyblue !important;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Footer styling */
 
 div .footer {
   text-align: center;
+  border-top: 2px solid lightskyblue;
+  padding: 50px;
 }
