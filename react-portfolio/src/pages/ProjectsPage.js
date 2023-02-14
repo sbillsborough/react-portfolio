@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Button } from "react-bootstrap";
+import one from "../resources/img/1.png";
+import two from "../resources/img/2.png";
+import three from "../resources/img/3.png";
+import four from "../resources/img/4.png";
+import five from "../resources/img/5.png";
+import six from "../resources/img/6.png";
 
 const ProjectsPage = ({ name }) => {
   const [photos] = useState([
     {
-      i: "1",
+      src: one,
       title: "Work Day Scheduler",
       description:
         "A scheduler for planning the users work day. Add text to each hourly section and they will persist on page reload. Colour coded to indicate whether the task is in the past, present or fututre.",
@@ -13,7 +19,7 @@ const ProjectsPage = ({ name }) => {
       linkGithub: "https://github.com/sbillsborough/work-day-scheduler",
     },
     {
-      i: "2",
+      src: two,
       title: "Random Password Generator",
       description:
         "A random password generator that produces a password based on the users requirments. These include required length, upper/lowercase characters, special characters and numbers. Also checks to see if the password is at least 10 characters long.",
@@ -21,7 +27,7 @@ const ProjectsPage = ({ name }) => {
       linkGithub: "https://github.com/sbillsborough/random-password-generator",
     },
     {
-      i: "3",
+      src: three,
       title: "Console Finances",
       description:
         "Project that loops through a nested array and logs the necessary information to the console.",
@@ -29,7 +35,7 @@ const ProjectsPage = ({ name }) => {
       linkGithub: "https://github.com/sbillsborough/Console-Finances",
     },
     {
-      i: "4",
+      src: four,
       title: "Team Profile Generator",
       description:
         "A command line app that prompts users then creates team members of a software development company based on their response.",
@@ -37,14 +43,14 @@ const ProjectsPage = ({ name }) => {
       linkGithub: "https://github.com/sbillsborough/team-profile-generator",
     },
     {
-      i: "5",
+      src: five,
       title: "Bootstrap Portfolio",
       description: "A Web Developer Portfolio built in Bootstrap.",
       linkApp: "https://sbillsborough.github.io/Bootstrap-Portfolio/",
       linkGithub: "https://github.com/sbillsborough/Bootstrap-Portfolio",
     },
     {
-      i: "6",
+      src: six,
       title: "Music App",
       description:
         "A web app that allows users to search for a song, artist or band and see a dynamically generated link to a relevant YouTube video to said song/musician. We also display 5 similarly named artists in the 'Similar to your search' section.",
@@ -62,7 +68,8 @@ const ProjectsPage = ({ name }) => {
           <Card id="card-projects" style={{ width: "18rem" }}>
             <Card.Img
               variant="top"
-              src={require(`../resources/img/${image.i}.png`).default}
+              key={i}
+              src={image.src}
               alt="portfolio project"
             />
             <Card.Body>
