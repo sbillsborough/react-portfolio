@@ -8,13 +8,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Main Styling */
 
 /* NavBar styling */
 
@@ -90,7 +91,7 @@ div .home-wrapper {
 
 /* Footer styling */
 
-div .footer {
+.footer {
   text-align: center;
   border-top: 2px solid lightskyblue;
   padding: 50px;
