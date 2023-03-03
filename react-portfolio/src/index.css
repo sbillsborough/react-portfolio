@@ -60,20 +60,24 @@ div .home-wrapper {
 
 #spacecards {
   text-align: center;
+  justify-content: center;
   display: flex;
+  padding: 25px;
 }
 
 .flex-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 #card-projects {
   height: 350px;
   align-items: center;
+  margin: 10px;
 }
 
 #btns-projects {
@@ -95,6 +99,7 @@ div .home-wrapper {
 .footer {
   text-align: center;
   border-top: 2px solid lightskyblue;
+  margin: 0;
   padding: 0 3%;
   height: 50px;
   background-color: #fff;
