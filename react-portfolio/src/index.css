@@ -1,19 +1,14 @@
 /* GLOBAL STYLING / RESETS */
+:root {
+  --background: #87cefa;
+  --main: #f5f5dc;
+}
 
 html,
 body {
   margin: 0;
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Main Styling */
@@ -24,14 +19,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: lightskyblue;
-  color: beige;
+  background: var(--background);
+  color: var(--main);
   padding: 0 3%;
   height: 50px;
 }
 
 nav a {
-  color: beige;
+  color: var(--main);
   text-decoration: none;
 }
 
@@ -76,6 +71,8 @@ div .home-wrapper {
 
 /* Project Card Styling */
 .card {
+  border: none !important;
+  box-shadow: 2px 2px 5px #999;
   width: 400px !important;
   height: 450px !important;
   margin: 30px auto !important;
@@ -91,19 +88,32 @@ div .home-wrapper {
 
 #btns-projects {
   display: flex;
+  max-height: 40px;
+  justify-content: space-around;
 }
 
 .btn-primary {
-  background: lightskyblue !important;
+  background: var(--background) !important;
+  border: none !important;
   align-items: center;
   justify-content: center;
+}
+
+.btn a {
+  text-decoration: none;
+  color: var(--main);
+}
+
+.btn a:hover {
+  text-decoration: underline;
+  color: var(--main);
 }
 
 /* Footer styling */
 
 .footer {
   text-align: center;
-  border-top: 2px solid lightskyblue;
+  border-top: 2px solid var(--background);
   margin: 0;
   padding: 0 3%;
   height: 50px;

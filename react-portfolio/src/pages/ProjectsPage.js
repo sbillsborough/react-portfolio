@@ -81,11 +81,11 @@ const ProjectsPage = ({ name }) => {
 
               <div id="btns-projects">
                 <Button>
-                  <a href={image.linkApp}>View deployed application</a>{" "}
+                  <a href={image.linkApp}>Deployed Application</a>{" "}
                 </Button>
                 <br />
                 <Button>
-                  <a href={image.linkGithub}>View GitHub repository</a>{" "}
+                  <a href={image.linkGithub}>GitHub Repository</a>{" "}
                 </Button>
               </div>
             </Card.Body>
