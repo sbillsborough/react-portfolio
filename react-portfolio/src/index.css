@@ -91,6 +91,8 @@ div .home-wrapper {
 
 #btns-projects {
   display: flex;
+  max-height: 40px;
+  justify-content: space-around;
 }
 
 .btn-primary {
