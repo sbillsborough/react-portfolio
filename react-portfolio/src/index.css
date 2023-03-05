@@ -81,17 +81,10 @@ div .home-wrapper {
   margin: 30px auto !important;
 }
 
-.card-body {
-  overflow-y: scroll;
-}
-
-.scrollable {
-  overflow-y: auto !important;
-  max-height: 300px !important;
-}
-
 .card-text {
-  overflow: auto;
+  overflow-y: scroll;
+  max-height: 100px !important;
+  padding: 5px;
 }
 
 /* Button Styling */

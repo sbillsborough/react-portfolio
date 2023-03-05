@@ -76,9 +76,9 @@ const ProjectsPage = ({ name }) => {
               <Card.Title>
                 <span>{image.title}</span>
               </Card.Title>
-              <div className="scrollable">
-                <Card.Text>{image.description}</Card.Text>
-              </div>
+
+              <Card.Text>{image.description}</Card.Text>
+
               <div id="btns-projects">
                 <Button>
                   <a href={image.linkApp}>View deployed application</a>{" "}
