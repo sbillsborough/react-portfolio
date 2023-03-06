@@ -51,18 +51,22 @@ function Contact() {
       <div className="info-wrapper">
         <h2>My Information</h2>
         <ul>
-          <li>Email: billsboroughscott@gmail.com</li>
+          <li>
+            <a href="mailto:billsboroughscott@gmail.com">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </li>
           <li>
             <a
               href="https://docs.google.com/document/d/1jK2UPUtZUg3-36E1klYv7rK2zEPrgHrOlqdM6zpWD20/edit?usp=sharing"
               target="_blank"
             >
-              CV
+              <i class="fa-regular fa-file"></i>
             </a>
           </li>
           <li>
             <a href="https://github.com/sbillsborough" target="_blank">
-              GitHub
+              <i class="fa-brands fa-github"></i>
             </a>
           </li>
           <li>
@@ -70,7 +74,7 @@ function Contact() {
               href="https://www.linkedin.com/in/scott-billsborough/"
               target="_blank"
             >
-              Linkedin
+              <i class="fa-brands fa-linkedin"></i>
             </a>
           </li>
         </ul>
