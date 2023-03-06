@@ -62,37 +62,40 @@ const ProjectsPage = ({ name }) => {
   const currentPhotos = photos.filter((photo) => photo.name === name);
 
   return (
-    <div id="spacecards">
-      <div className="flex-row">
-        {currentPhotos.map((image, i) => (
-          <Card id="card-projects" style={{ width: "18rem" }}>
-            <Card.Img
-              variant="top"
-              key={i}
-              src={image.src}
-              alt="portfolio project"
-            />
-            <Card.Body>
-              <Card.Title>
-                <span>{image.title}</span>
-              </Card.Title>
+    <>
+      <h2>Projects</h2>
+      <div id="spacecards">
+        <div className="flex-row">
+          {currentPhotos.map((image, i) => (
+            <Card id="card-projects" style={{ width: "18rem" }}>
+              <Card.Img
+                variant="top"
+                key={i}
+                src={image.src}
+                alt="portfolio project"
+              />
+              <Card.Body>
+                <Card.Title>
+                  <span>{image.title}</span>
+                </Card.Title>
 
-              <Card.Text>{image.description}</Card.Text>
+                <Card.Text>{image.description}</Card.Text>
 
-              <div id="btns-projects">
-                <Button>
-                  <a href={image.linkApp}>Deployed Application</a>{" "}
-                </Button>
-                <br />
-                <Button>
-                  <a href={image.linkGithub}>GitHub Repository</a>{" "}
-                </Button>
-              </div>
-            </Card.Body>
-          </Card>
-        ))}
+                <div id="btns-projects">
+                  <Button>
+                    <a href={image.linkApp}>Deployed Application</a>{" "}
+                  </Button>
+                  <br />
+                  <Button>
+                    <a href={image.linkGithub}>GitHub Repository</a>{" "}
+                  </Button>
+                </div>
+              </Card.Body>
+            </Card>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

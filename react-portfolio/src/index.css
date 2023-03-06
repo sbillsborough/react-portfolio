@@ -15,6 +15,11 @@ body {
 
 /* Main Styling */
 
+h2 {
+  text-align: center;
+  margin-top: 30px !important;
+}
+
 /* NavBar styling */
 
 header {
@@ -88,7 +93,7 @@ div .home-wrapper {
 
 .card-text {
   overflow-y: scroll;
-  max-height: 130px !important;
+  height: 120px !important;
   padding: 5px;
 }
 
@@ -98,6 +103,7 @@ div .home-wrapper {
   display: flex;
   max-height: 40px;
   justify-content: space-around;
+  gap: 2px;
 }
 
 .btn-primary {
@@ -134,7 +140,7 @@ div .home-wrapper {
   text-align: center;
 }
 
-h3 {
+form h3 {
   margin: auto !important;
 }
 
