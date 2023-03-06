@@ -2,6 +2,8 @@
 :root {
   --background: #87cefa;
   --main: #f5f5dc;
+  --textareaHeight: 150px;
+  --placeholderFontSize: 14px;
 }
 
 html,
@@ -103,6 +105,7 @@ div .home-wrapper {
   border: none !important;
   align-items: center;
   justify-content: center;
+  height: 55px;
 }
 
 .btn:hover {
@@ -115,7 +118,6 @@ div .home-wrapper {
 }
 
 .btn a:hover {
-  text-decoration: underline;
   color: var(--main);
 }
 
@@ -132,12 +134,21 @@ div .home-wrapper {
   text-align: center;
 }
 
+h3 {
+  margin: auto !important;
+}
+
 #form {
   display: grid;
+  gap: 20px;
   grid-template-areas:
     "h3 h3"
-    "name textarea"
-    "email textarea";
+    "name email"
+    "textarea textarea"
+    "button button ";
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 50px 50px 1fr 50px;
 }
 
 #form > h3 {
@@ -154,6 +165,53 @@ div .home-wrapper {
 
 #form > textarea {
   grid-area: textarea;
+}
+
+#form > button {
+  grid-area: button;
+}
+
+:placeholder-shown {
+  color: var(--background);
+}
+
+::placeholder {
+  transform: translateY(3px);
+}
+
+.name,
+.email,
+textarea {
+  height: 50px;
+  border-width: 0 0 2px 0;
+  border-bottom: 2px solid var(--background);
+}
+
+.name:focus,
+.email:focus,
+textarea:focus {
+  outline: none;
+  border-width: 0 0 2px 0;
+  border-bottom: 3px solid #5ec1ff;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+button {
+  width: 60%;
+  height: 45px;
+  margin: auto !important;
+  border: none;
+  border-radius: 12px !important;
+  background: var(--background);
+  color: var(--main);
+}
+
+button:hover {
+  background: #5ec1ff !important;
 }
 
 /* Footer styling */

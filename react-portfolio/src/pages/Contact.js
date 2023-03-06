@@ -75,6 +75,7 @@ function Contact() {
           </li>
         </ul>
       </div>
+
       <div className="contact-wrapper">
         <form id="form" onSubmit={handleSubmit}>
           <h3>Contact Me</h3>
