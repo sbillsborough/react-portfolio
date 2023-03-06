@@ -76,9 +76,10 @@ function Contact() {
         </ul>
       </div>
       <div className="contact-wrapper">
-        <form onSubmit={handleSubmit}>
+        <form id="form" onSubmit={handleSubmit}>
           <h3>Contact Me</h3>
           <input
+            className="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
@@ -86,6 +87,7 @@ function Contact() {
             placeholder="Enter your name"
           />
           <input
+            className="email"
             name="email"
             value={formData.email}
             onChange={handleChange}

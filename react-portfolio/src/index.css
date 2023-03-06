@@ -121,8 +121,39 @@ div .home-wrapper {
 
 /* Contact Page Styling */
 
-.container {
+.contact-container {
   padding-bottom: 60px;
+  display: grid;
+  width: 100%;
+  justify-content: center;
+}
+
+.info-wrapper {
+  text-align: center;
+}
+
+#form {
+  display: grid;
+  grid-template-areas:
+    "h3 h3"
+    "name textarea"
+    "email textarea";
+}
+
+#form > h3 {
+  grid-area: h3;
+}
+
+#form > .name {
+  grid-area: name;
+}
+
+#form > .email {
+  grid-area: email;
+}
+
+#form > textarea {
+  grid-area: textarea;
 }
 
 /* Footer styling */
