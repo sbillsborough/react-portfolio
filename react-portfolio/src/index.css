@@ -105,6 +105,10 @@ div .home-wrapper {
   justify-content: center;
 }
 
+.btn:hover {
+  background: #5ec1ff !important;
+}
+
 .btn a {
   text-decoration: none;
   color: var(--main);
