@@ -119,6 +119,12 @@ div .home-wrapper {
   color: var(--main);
 }
 
+/* Contact Page Styling */
+
+.container {
+  padding-bottom: 60px;
+}
+
 /* Footer styling */
 
 .footer {
