@@ -47,58 +47,62 @@ function Contact() {
   };
 
   return (
-    <>
-      <h2>My Information</h2>
-      <ul>
-        <li>Email: billsboroughscott@gmail.com</li>
-        <li>
-          <a
-            href="https://docs.google.com/document/d/1jK2UPUtZUg3-36E1klYv7rK2zEPrgHrOlqdM6zpWD20/edit?usp=sharing"
-            target="_blank"
-          >
-            CV
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/sbillsborough" target="_blank">
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/scott-billsborough/"
-            target="_blank"
-          >
-            Linkedin
-          </a>
-        </li>
-      </ul>
-      <form onSubmit={handleSubmit}>
-        <h3>Contact Me!</h3>
-        <input
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          type="text"
-          placeholder="Enter your name"
-        />
-        <input
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          type="text"
-          placeholder="Enter your email address"
-        />
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          placeholder="Enter your message"
-          cols="30"
-          rows="10"
-        ></textarea>
-        <button>Submit</button>
-      </form>
+    <div className="contact-wrapper">
+      <div className="info-container">
+        <h2>My Information</h2>
+        <ul>
+          <li>Email: billsboroughscott@gmail.com</li>
+          <li>
+            <a
+              href="https://docs.google.com/document/d/1jK2UPUtZUg3-36E1klYv7rK2zEPrgHrOlqdM6zpWD20/edit?usp=sharing"
+              target="_blank"
+            >
+              CV
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/sbillsborough" target="_blank">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/scott-billsborough/"
+              target="_blank"
+            >
+              Linkedin
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="contact-container">
+        <form onSubmit={handleSubmit}>
+          <h3>Contact Me</h3>
+          <input
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            type="text"
+            placeholder="Enter your name"
+          />
+          <input
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            type="text"
+            placeholder="Enter your email address"
+          />
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Enter your message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button>Submit</button>
+        </form>
+      </div>
 
       {success && (
         <p className="success-message">
@@ -106,7 +110,7 @@ function Contact() {
           soon as I can.
         </p>
       )}
-    </>
+    </div>
   );
 }
 
