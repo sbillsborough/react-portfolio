@@ -32,7 +32,7 @@ Open the link in any modern browser.
 
 ## Live Application
 
-https://sbillsborough.github.io/
+https://sbillsborough-portfolio.netlify.app
 
 ## Features
 
