@@ -1,4 +1,5 @@
 import { useState } from "react";
+import cv from "../resources/img/cv.png";
 
 function Contact() {
   const [success, setSuccess] = useState(false);
@@ -61,7 +62,7 @@ function Contact() {
               href="https://docs.google.com/document/d/1jK2UPUtZUg3-36E1klYv7rK2zEPrgHrOlqdM6zpWD20/edit?usp=sharing"
               target="_blank"
             >
-              <i class="fa-regular fa-file"></i>
+              <img src={cv} className="cv" alt="CV Icon" />
             </a>
           </li>
           <li>

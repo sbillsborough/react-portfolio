@@ -57,6 +57,7 @@ div .home-wrapper {
   border-radius: 50%;
   height: 250px;
   width: 250px;
+  object-fit: cover;
 }
 
 .icons {
@@ -189,8 +190,8 @@ ul {
   color: #ea4335;
 }
 
-.fa-file {
-  color: #34a853;
+.cv {
+  height: 28px;
 }
 
 /* Contact Page Styling */
