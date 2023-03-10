@@ -62,7 +62,7 @@ div .home-wrapper {
 
 .icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .fa-html5 {
