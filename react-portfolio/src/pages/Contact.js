@@ -54,7 +54,7 @@ function Contact() {
         <ul>
           <li>
             <a href="mailto:billsboroughscott@gmail.com">
-              <i class="fa-regular fa-envelope"></i>
+              <i className="fa-regular fa-envelope"></i>
             </a>
           </li>
           <li>
@@ -67,7 +67,7 @@ function Contact() {
           </li>
           <li>
             <a href="https://github.com/sbillsborough" target="_blank">
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
           </li>
           <li>
@@ -75,7 +75,7 @@ function Contact() {
               href="https://www.linkedin.com/in/scott-billsborough/"
               target="_blank"
             >
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </a>
           </li>
         </ul>
