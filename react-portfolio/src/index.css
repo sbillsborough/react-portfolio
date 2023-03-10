@@ -311,7 +311,7 @@ button:hover {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 490px) {
   header h3 {
     font-size: 1.2rem;
     margin: 0;
