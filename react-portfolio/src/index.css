@@ -306,12 +306,20 @@ button:hover {
     margin: 0;
   }
 
+  .navbar {
+    max-width: 168px;
+  }
+
   nav a {
     font-size: 0.8rem;
   }
+
+  .icons {
+    gap: 10px;
+  }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 490px) {
   header h3 {
     font-size: 1.2rem;
     margin: 0;
