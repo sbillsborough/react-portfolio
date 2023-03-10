@@ -309,6 +309,17 @@ button:hover {
   nav a {
     font-size: 0.8rem;
   }
+}
+
+@media (max-width: 460px) {
+  header h3 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
 
   .home-wrapper img {
     height: 150px;
