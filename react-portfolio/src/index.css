@@ -306,8 +306,16 @@ button:hover {
     margin: 0;
   }
 
+  .navbar {
+    max-width: 168px;
+  }
+
   nav a {
     font-size: 0.8rem;
+  }
+
+  .icons {
+    gap: 10px;
   }
 }
 
