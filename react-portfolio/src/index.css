@@ -297,3 +297,29 @@ button:hover {
   height: 50px;
   background-color: #fff;
 }
+
+/* Media Queries */
+
+@media (max-width: 390px) {
+  header h3 {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+
+  .home-wrapper img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .home-wrapper p {
+    padding: 20px;
+  }
+
+  .icons {
+    padding: 25px;
+  }
+}
