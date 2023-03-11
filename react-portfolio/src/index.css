@@ -2,14 +2,13 @@
 :root {
   --background: #87cefa;
   --main: #f5f5dc;
-  --textareaHeight: 150px;
-  --placeholderFontSize: 14px;
 }
 
 html,
 body {
   margin: 0;
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
   font-family: "Roboto", sans-serif;
 }
 
@@ -50,6 +49,7 @@ nav a.active {
 div .home-wrapper {
   text-align: center;
   margin: 20px auto;
+  width: 100%;
 }
 
 .headshot {
@@ -300,14 +300,18 @@ button:hover {
 
 /* Media Queries */
 
-@media (max-width: 393px) {
+@media (max-width: 375px) {
   header h3 {
     font-size: 1rem;
     margin: 0;
   }
 
   .navbar {
-    max-width: 160px;
+    width: 100vw;
+  }
+
+  nav {
+    margin-left: auto;
   }
 
   nav a {
@@ -315,8 +319,8 @@ button:hover {
   }
 
   .icons {
-    gap: 10px;
-    padding: 20px;
+    gap: 5px;
+    margin: auto;
   }
 }
 
