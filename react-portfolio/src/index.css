@@ -298,7 +298,9 @@ button:hover {
   background-color: #fff;
 }
 
-/* Media Queries */
+/* MEDIA QUERIES */
+
+/* Nav Bar and Homepage */
 
 @media (max-width: 375px) {
   header h3 {
@@ -321,6 +323,10 @@ button:hover {
   .icons {
     gap: 5px;
     margin: auto;
+  }
+
+  .card {
+    max-width: 80vw;
   }
 }
 
@@ -345,5 +351,9 @@ button:hover {
 
   .icons {
     padding: 25px;
+  }
+
+  .card {
+    max-width: 80vw;
   }
 }
