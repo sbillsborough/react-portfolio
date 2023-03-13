@@ -211,9 +211,6 @@ ul {
   justify-content: space-evenly;
 }
 
-.info-wrapper {
-}
-
 #form {
   display: grid;
   gap: 20px;
@@ -304,22 +301,18 @@ button:hover {
 
 /* Nav Bar and Homepage */
 
-@media (max-width: 375px) {
-  header {
-    width: 100vw;
-  }
-
+@media (max-width: 394px) {
   header h3 {
-    font-size: 1rem;
+    font-size: 0.8rem !important;
     margin: 0;
   }
 
-  nav {
-    margin-left: auto;
+  nav a {
+    font-size: 0.6rem !important;
   }
 
-  nav a {
-    font-size: 0.8rem;
+  .navbar {
+    margin-right: 45px !important;
   }
 
   .icons {
@@ -331,15 +324,32 @@ button:hover {
     max-width: 80vw;
   }
 
-  .info-wrapper {
-    width: 100vw;
-    margin: 0;
-    justify-content: center;
+  .contact-container {
+    width: 100vw !important;
+    padding: 0;
   }
 
-  .contact-container {
-    width: 60vw;
-    justify-content: center;
+  .info-wrapper {
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  ul {
+    justify-content: space-evenly;
+  }
+
+  #form {
+    padding: 0 30px 0 30px;
+    grid-template-areas:
+      "name"
+      "email"
+      "textarea"
+      "button";
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 50px);
   }
 }
 
