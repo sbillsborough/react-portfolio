@@ -5,10 +5,12 @@
 }
 
 html,
-body {
+body,
+#root {
   margin: 0;
+  padding: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   font-family: "Roboto", sans-serif;
 }
 
@@ -27,8 +29,9 @@ header {
   align-items: center;
   background: var(--background);
   color: var(--main);
-  padding: 0 3%;
+  padding: 0 1%;
   height: 50px;
+  width: 100%;
 }
 
 nav a {
@@ -197,25 +200,24 @@ ul {
 /* Contact Page Styling */
 
 .contact-container {
-  padding-bottom: 60px;
   display: grid;
-  width: 100%;
+  margin: 0;
   justify-content: center;
-}
-
-.info-wrapper {
   text-align: center;
 }
 
-form h3 {
-  margin: auto !important;
+.contact-container ul {
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+.info-wrapper {
 }
 
 #form {
   display: grid;
   gap: 20px;
   grid-template-areas:
-    "h3 h3"
     "name email"
     "textarea textarea"
     "button button ";
@@ -303,13 +305,13 @@ button:hover {
 /* Nav Bar and Homepage */
 
 @media (max-width: 375px) {
+  header {
+    width: 100vw;
+  }
+
   header h3 {
     font-size: 1rem;
     margin: 0;
-  }
-
-  .navbar {
-    width: 100vw;
   }
 
   nav {
@@ -331,7 +333,13 @@ button:hover {
 
   .info-wrapper {
     width: 100vw;
-    margin: auto 10px;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .contact-container {
+    width: 60vw;
+    justify-content: center;
   }
 }
 
@@ -339,6 +347,10 @@ button:hover {
   header h3 {
     font-size: 1.2rem;
     margin: 0;
+  }
+
+  .navbar {
+    margin-right: 15px;
   }
 
   nav a {
@@ -363,12 +375,16 @@ button:hover {
   }
 
   .contact-container {
-    margin: 0 20px;
     width: 100vw;
+    justify-content: center;
+    padding: 0;
   }
 
   .info-wrapper {
-    width: 80vw;
-    margin: auto 10px;
+    width: 100vw;
+  }
+
+  #form {
+    padding: 0 30px 0 30px;
   }
 }
