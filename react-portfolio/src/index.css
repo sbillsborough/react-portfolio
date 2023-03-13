@@ -303,16 +303,16 @@ button:hover {
 
 @media (max-width: 394px) {
   header h3 {
-    font-size: 0.8rem !important;
+    font-size: 1rem !important;
     margin: 0;
   }
 
   nav a {
-    font-size: 0.6rem !important;
+    font-size: 0.9rem !important;
   }
 
   .navbar {
-    margin-right: 45px !important;
+    margin-right: 10px;
   }
 
   .icons {
@@ -337,7 +337,7 @@ button:hover {
   }
 
   ul {
-    justify-content: space-evenly;
+    gap: 20px;
   }
 
   #form {
