@@ -49,8 +49,8 @@ function Contact() {
 
   return (
     <div className="contact-container">
+      <h2>My Information</h2>
       <div className="info-wrapper">
-        <h2>My Information</h2>
         <ul>
           <li>
             <a href="mailto:billsboroughscott@gmail.com">
