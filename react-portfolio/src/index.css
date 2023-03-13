@@ -328,6 +328,11 @@ button:hover {
   .card {
     max-width: 80vw;
   }
+
+  .info-wrapper {
+    width: 100vw;
+    margin: auto 10px;
+  }
 }
 
 @media (max-width: 490px) {
@@ -355,5 +360,15 @@ button:hover {
 
   .card {
     max-width: 80vw;
+  }
+
+  .contact-container {
+    margin: 0 20px;
+    width: 100vw;
+  }
+
+  .info-wrapper {
+    width: 80vw;
+    margin: auto 10px;
   }
 }
