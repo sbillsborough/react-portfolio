@@ -82,8 +82,8 @@ function Contact() {
       </div>
 
       <div className="contact-wrapper">
+        <h3>Contact Me</h3>
         <form id="form" onSubmit={handleSubmit}>
-          <h3>Contact Me</h3>
           <input
             className="name"
             name="name"
@@ -108,6 +108,7 @@ function Contact() {
             cols="30"
             rows="10"
           ></textarea>
+
           <button>Submit</button>
         </form>
       </div>
