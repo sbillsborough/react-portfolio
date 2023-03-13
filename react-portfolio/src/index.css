@@ -311,10 +311,6 @@ button:hover {
     font-size: 0.9rem !important;
   }
 
-  .navbar {
-    margin-right: 10px;
-  }
-
   .icons {
     gap: 5px;
     margin: auto;
@@ -332,8 +328,7 @@ button:hover {
   .info-wrapper {
     width: 100vw;
     display: flex;
-    text-align: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   ul {
@@ -357,10 +352,6 @@ button:hover {
   header h3 {
     font-size: 1.2rem;
     margin: 0;
-  }
-
-  .navbar {
-    margin-right: 15px;
   }
 
   nav a {
