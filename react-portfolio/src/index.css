@@ -300,7 +300,19 @@ button:hover {
 
 /* Nav Bar and Homepage */
 
-@media only screen and (max-width: 280px) {
+@media only screen and (max-width: 320px) {
+  #root {
+    font-size: 0.8rem;
+  }
+
+  .icons i {
+    font-size: 25px;
+  }
+
+  button {
+    width: 50%;
+    height: 70%;
+  }
 }
 
 @media only screen and (max-width: 394px) {
@@ -377,7 +389,7 @@ button:hover {
   }
 
   .contact-container {
-    width: 100vw;
+    width: 100% !important;
     justify-content: center;
   }
 
