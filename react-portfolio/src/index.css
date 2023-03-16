@@ -300,7 +300,10 @@ button:hover {
 
 /* Nav Bar and Homepage */
 
-@media (max-width: 394px) {
+@media only screen and (max-width: 280px) {
+}
+
+@media only screen and (max-width: 394px) {
   header h3 {
     font-size: 1rem !important;
     margin: 0;
@@ -346,7 +349,7 @@ button:hover {
   }
 }
 
-@media (max-width: 490px) {
+@media only screen and (max-width: 490px) {
   header h3 {
     font-size: 1.2rem;
     margin: 0;
