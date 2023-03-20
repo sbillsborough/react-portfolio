@@ -173,6 +173,10 @@ div .home-wrapper {
   color: var(--main);
 }
 
+.btn:active {
+  transform: translateY(4px);
+}
+
 /* My Information Styling */
 
 ul {
@@ -286,6 +290,10 @@ button:hover {
   background: #37b2ff !important;
 }
 
+button:active {
+  transform: translateY(4px);
+}
+
 /* Footer styling */
 
 .footer {
@@ -319,6 +327,12 @@ button:hover {
   button {
     width: 50%;
     height: 70%;
+  }
+
+  .btn {
+    font-size: 0.7rem !important;
+    height: 3rem;
+    width: 6rem;
   }
 }
 
