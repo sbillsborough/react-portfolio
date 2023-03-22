@@ -28,11 +28,11 @@ const ProjectsPage = ({ name }) => {
     },
     {
       src: three,
-      title: "Console Finances",
+      title: "Weather Dashboard",
       description:
-        "Project that loops through a nested array and logs the necessary information to the console.",
-      linkApp: "https://github.com/sbillsborough/Console-Finances",
-      linkGithub: "https://github.com/sbillsborough/Console-Finances",
+        "A weather report dashboard that displays the current date. Allows the user to search for the current and 5 day weather in the city of their choice. Stores the search history and creates a button that allows the user to easily click and bring up the previous search history.",
+      linkApp: "https://sbillsborough.github.io/weather-dashboard/",
+      linkGithub: "https://github.com/sbillsborough/weather-dashboard",
     },
     {
       src: four,

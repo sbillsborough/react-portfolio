@@ -47,6 +47,10 @@ nav a.active {
   text-decoration: underline;
 }
 
+.fa-bars {
+  display: none;
+}
+
 /* Home Page styling */
 
 div .home-wrapper {

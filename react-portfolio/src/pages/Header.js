@@ -5,6 +5,7 @@ function Header() {
   return (
     <header>
       <h3>Scott Billsborough</h3>
+
       <div className="navbar">
         <nav>
           <NavLink to="/">Home</NavLink>
