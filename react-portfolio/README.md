@@ -42,10 +42,9 @@ List of features ready and TODOs for future development
 - Bootstrap styling of project cards
 - Links to all information
 - Working contact form
+- Responsive
 
 To-do list:
-
-- Add media queries and padding/sizing of the pages for mobile viewports
 
 ## Status
 
