@@ -319,24 +319,44 @@ button:active {
 
 /* Nav Bar and Homepage */
 
-@media only screen and (max-width: 320px) {
-  #root {
-    font-size: 0.8rem;
+@media only screen and (max-width: 490px) {
+  header h3 {
+    font-size: 1.2rem;
+    margin: 0;
   }
 
-  .icons i {
-    font-size: 25px;
+  nav a {
+    font-size: 1rem;
   }
 
-  button {
-    width: 50%;
-    height: 70%;
+  .home-wrapper img {
+    height: 150px;
+    width: 150px;
   }
 
-  .btn {
-    font-size: 0.7rem !important;
-    height: 3rem;
-    width: 6rem;
+  .home-wrapper p {
+    padding: 20px;
+  }
+
+  .icons {
+    padding: 25px;
+  }
+
+  .card {
+    max-width: 80vw;
+  }
+
+  .contact-container {
+    width: 100% !important;
+    justify-content: center;
+  }
+
+  .info-wrapper {
+    width: 100vw;
+  }
+
+  #form {
+    padding: 0 30px 0 30px;
   }
 }
 
@@ -386,43 +406,23 @@ button:active {
   }
 }
 
-@media only screen and (max-width: 490px) {
-  header h3 {
-    font-size: 1.2rem;
-    margin: 0;
+@media only screen and (max-width: 320px) {
+  #root {
+    font-size: 0.8rem;
   }
 
-  nav a {
-    font-size: 1rem;
+  .icons i {
+    font-size: 25px;
   }
 
-  .home-wrapper img {
-    height: 150px;
-    width: 150px;
+  button {
+    width: 50%;
+    height: 70%;
   }
 
-  .home-wrapper p {
-    padding: 20px;
-  }
-
-  .icons {
-    padding: 25px;
-  }
-
-  .card {
-    max-width: 80vw;
-  }
-
-  .contact-container {
-    width: 100% !important;
-    justify-content: center;
-  }
-
-  .info-wrapper {
-    width: 100vw;
-  }
-
-  #form {
-    padding: 0 30px 0 30px;
+  .btn {
+    font-size: 0.7rem !important;
+    height: 3rem;
+    width: 6rem;
   }
 }
