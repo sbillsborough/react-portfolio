@@ -46,8 +46,6 @@ List of features ready and TODOs for future development
 
 To-do list:
 
-- Add media queries and padding/sizing of the pages for mobile viewports
-
 ## Status
 
 Project is: _in progress_

@@ -39,12 +39,12 @@ https://sbillsborough-portfolio.netlify.app
 List of features ready and TODOs for future development
 
 - React Router to navigate pages
-- Bootstrap styling of cards and contact form
+- Bootstrap styling of project cards
+- Links to all information
+- Working contact form
+- Responsive
 
 To-do list:
-
-- Styling
-- Fix images not showing up on the projects page
 
 ## Status
 
