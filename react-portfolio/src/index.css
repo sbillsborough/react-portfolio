@@ -10,7 +10,7 @@ body,
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%;
+  width: 1440px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -31,7 +31,8 @@ header {
   color: var(--main);
   padding: 0 1%;
   height: 50px;
-  width: 100%;
+  width: 1330px;
+  margin: 0 auto;
 }
 
 nav a {
