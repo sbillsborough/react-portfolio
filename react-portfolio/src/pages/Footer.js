@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <div className="footer fixed-bottom">
-      <p>&copy; 2023 Scott Billsborough</p>
+      <span>&copy; 2023 Scott Billsborough</span>
     </div>
   );
 }

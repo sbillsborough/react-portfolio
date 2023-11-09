@@ -6,6 +6,7 @@
 :root {
   --background: #104d73;
   --main: #162b3f;
+  --borders: #0e2292;
 }
 
 html,
@@ -15,7 +16,8 @@ body,
   padding: 0;
   height: 100%;
   width: 1440px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Satoshi", sans-serif;
+  background: var(--main);
 }
 
 /* Main Styling */
@@ -65,7 +67,7 @@ nav a.active {
 .home-wrapper {
   text-align: center;
   margin: 0 auto;
-  padding: 60px;
+  padding: 30px 0;
   width: 100%;
   height: 400px;
   background: var(--main);
@@ -74,11 +76,13 @@ nav a.active {
 .home-wrapper h1 {
   font-family: "Satoshi", sans-serif;
   color: #fff;
+  margin: 0 auto;
 }
 
 .home-wrapper p {
   font-family: "Satoshi", sans-serif;
   color: #fff;
+  margin: 0 auto;
 }
 
 .headshot {
@@ -89,9 +93,20 @@ nav a.active {
   object-fit: cover;
 }
 
+.icons-wrapper {
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+}
+
 .icons {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  width: 800px;
+  background: var(--background);
+  border-radius: 20px;
+  padding: 5px 0;
 }
 
 .fa-html5 {
@@ -323,15 +338,13 @@ button:active {
 /* Footer styling */
 
 .footer {
-  border-top: 2px solid var(--background);
-  margin: 0;
+  border-top: 2px solid var(--borders);
+  background: var(--background);
   height: 50px;
-  background-color: #fff;
 }
 
-.footer p {
+.footer span {
   display: flex;
-  margin: 0 auto;
   height: 100%;
   justify-content: center;
   align-items: center;
