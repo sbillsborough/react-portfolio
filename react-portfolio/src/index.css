@@ -48,6 +48,12 @@ header h3 {
 nav a {
   color: #fff;
   text-decoration: none;
+  background: linear-gradient(to right, var(--background), var(--background)),
+    linear-gradient(to right, #fff, #fff, #fff);
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
 }
 
 nav a:not(:last-child) {
@@ -55,7 +61,8 @@ nav a:not(:last-child) {
 }
 
 nav a.active {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  background-size: 0 0.1em, 100% 0.1em;
 }
 
 .fa-bars {
