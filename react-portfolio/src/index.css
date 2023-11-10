@@ -46,8 +46,13 @@ header h3 {
 }
 
 nav a {
-  color: #fff;
   text-decoration: none;
+  background: linear-gradient(to right, var(--background), var(--background)),
+    linear-gradient(to right, #fff, #fff, #fff);
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
 }
 
 nav a:not(:last-child) {
@@ -55,7 +60,7 @@ nav a:not(:last-child) {
 }
 
 nav a.active {
-  text-decoration: underline;
+  background-size: 0 0.1em, 100% 0.1em;
 }
 
 .fa-bars {
@@ -75,18 +80,18 @@ nav a.active {
 
 .home-wrapper h1 {
   font-family: "Satoshi", sans-serif;
-  color: #fff;
+  color: #ffffffcc;
   margin: 0 auto;
 }
 
 .home-wrapper p {
   font-family: "Satoshi", sans-serif;
-  color: #fff;
+  color: #ffffffcc;
   margin: 0 auto;
 }
 
 .headshot {
-  border: 5px solid #a0a0a0;
+  border: 2px solid #a0a0a0;
   border-radius: 50%;
   height: 250px;
   width: 250px;
@@ -352,6 +357,7 @@ button:active {
   height: 100%;
   justify-content: center;
   align-items: center;
+  color: #ffffffcc;
 }
 
 /* MEDIA QUERIES */
