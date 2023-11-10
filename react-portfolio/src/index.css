@@ -46,7 +46,6 @@ header h3 {
 }
 
 nav a {
-  color: #fff;
   text-decoration: none;
   background: linear-gradient(to right, var(--background), var(--background)),
     linear-gradient(to right, #fff, #fff, #fff);
@@ -61,7 +60,6 @@ nav a:not(:last-child) {
 }
 
 nav a.active {
-  /* text-decoration: underline; */
   background-size: 0 0.1em, 100% 0.1em;
 }
 
