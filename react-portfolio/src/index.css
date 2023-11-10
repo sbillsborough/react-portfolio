@@ -109,6 +109,10 @@ nav a.active {
   padding: 5px 0;
 }
 
+i {
+  filter: drop-shadow(0 2px 0.1rem rgb(0, 0, 0));
+}
+
 .fa-html5 {
   color: #e34c26;
 }
