@@ -260,6 +260,11 @@ ul {
   width: 100% !important;
 }
 
+.contact-container h2,
+.contact-wrapper h3 {
+  color: #fff;
+}
+
 .contact-container ul {
   padding: 0;
   justify-content: space-evenly;
@@ -293,6 +298,13 @@ ul {
   grid-area: textarea;
 }
 
+#form > .name,
+#form > .email,
+#form > textarea {
+  background: var(--main);
+  color: #fff;
+}
+
 #form > button {
   grid-area: button;
 }
@@ -302,7 +314,12 @@ ul {
 }
 
 ::placeholder {
-  transform: translateY(3px);
+  color: #ffffffa3;
+}
+
+input[type="text"],
+textarea {
+  padding-top: 17px;
 }
 
 .name,
