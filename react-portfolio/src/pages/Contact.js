@@ -90,7 +90,7 @@ function Contact() {
             value={formData.name}
             onChange={handleChange}
             type="text"
-            placeholder="Enter your name"
+            placeholder="Name"
           />
           <input
             className="email"
@@ -98,13 +98,13 @@ function Contact() {
             value={formData.email}
             onChange={handleChange}
             type="text"
-            placeholder="Enter your email address"
+            placeholder="Email"
           />
           <textarea
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="Enter your message"
+            placeholder="Message"
             cols="30"
             rows="10"
           ></textarea>
