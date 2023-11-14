@@ -317,8 +317,9 @@ ul {
   color: #ffffffa3;
 }
 
-input[type="text"] {
-  padding-top: 10px;
+input[type="text"],
+textarea {
+  padding-top: 17px;
 }
 
 .name,
