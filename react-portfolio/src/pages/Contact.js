@@ -51,34 +51,36 @@ function Contact() {
     <div className="contact-container">
       <h2>My Information</h2>
       <div className="info-wrapper">
-        <ul>
-          <li>
-            <a href="mailto:billsboroughscott@gmail.com">
-              <i className="fa-regular fa-envelope"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://docs.google.com/document/d/1jK2UPUtZUg3-36E1klYv7rK2zEPrgHrOlqdM6zpWD20/edit?usp=sharing"
-              target="_blank"
-            >
-              <img src={cv} className="cv" alt="CV Icon" />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/sbillsborough" target="_blank">
-              <i className="fa-brands fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/scott-billsborough/"
-              target="_blank"
-            >
-              <i className="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
+        <div className="info-icons">
+          <ul>
+            <li>
+              <a href="mailto:billsboroughscott@gmail.com">
+                <i className="fa-regular fa-envelope"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://docs.google.com/document/d/1jK2UPUtZUg3-36E1klYv7rK2zEPrgHrOlqdM6zpWD20/edit?usp=sharing"
+                target="_blank"
+              >
+                <img src={cv} className="cv" alt="CV Icon" />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/sbillsborough" target="_blank">
+                <i className="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/scott-billsborough/"
+                target="_blank"
+              >
+                <i className="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div className="contact-wrapper">
