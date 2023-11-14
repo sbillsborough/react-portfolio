@@ -229,14 +229,28 @@ i {
 
 /* My Information Styling */
 
-ul {
-  list-style-type: none;
+.info-wrapper {
+  width: 400px;
+  background: var(--background);
+  border-radius: 20px;
+}
+
+.info-icons {
   display: flex;
-  justify-content: space-between;
+}
+
+.info-wrapper ul {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+}
+
+.info-wrapper ul li {
 }
 
 .info-wrapper ul li a {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .fa-linkedin {
@@ -248,7 +262,8 @@ ul {
 }
 
 .cv {
-  height: 28px;
+  height: 48px;
+  background: #fff;
 }
 
 /* Contact Page Styling */
@@ -413,9 +428,8 @@ button:active {
     justify-content: center;
   }
 
-  .info-wrapper {
-    width: 100vw;
-  }
+  /* .info-wrapper {
+  } */
 
   #form {
     padding: 0 30px 0 30px;
@@ -446,7 +460,6 @@ button:active {
   }
 
   .info-wrapper {
-    width: 100vw;
     display: flex;
     justify-content: space-evenly;
   }
