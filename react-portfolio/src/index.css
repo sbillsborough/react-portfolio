@@ -378,7 +378,7 @@ button:active {
 
 /* Footer styling */
 
-.footer {
+/* .footer {
   border-top: 2px solid var(--borders);
   background: var(--background);
   height: 50px;
@@ -390,7 +390,7 @@ button:active {
   justify-content: center;
   align-items: center;
   color: #ffffffcc;
-}
+} */
 
 /* MEDIA QUERIES */
 
