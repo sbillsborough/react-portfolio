@@ -81,9 +81,13 @@ function Footer() {
             <a href="https://www.linkedin.com/in/scott-billsborough/">
               <i className="fa-brands fa-linkedin"></i>
             </a>
+          </li>
+          <li>
             <a href="https://github.com/sbillsborough">
               <i className="fa-brands fa-github"></i>
             </a>
+          </li>
+          <li>
             <a href="mailto:billsboroughscott@gmail.com">
               <i className="fa-regular fa-envelope"></i>
             </a>
@@ -94,8 +98,8 @@ function Footer() {
           <NavLink to="/projects">Projects</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </nav>
+        <p class="legal">&copy; 2023 Scott Billsborough</p>
       </section>
-      <p class="legal">&copy; 2023 Scott Billsborough</p>
     </footer>
   );
 }
