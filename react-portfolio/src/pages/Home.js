@@ -7,9 +7,23 @@ function Home() {
   return (
     <>
       <div className="home-wrapper">
-        <img src={headshot} className="headshot" alt="Scott Billsborough" />
         <h1>Web Developer</h1>
-        <p>Hi, I'm Scott and I am a Web Developer. Welcome to my portfolio.</p>
+        <img src={headshot} className="headshot" alt="Scott Billsborough" />
+
+        <p>
+          Dedicated and passionate web developer with a strong foundation in
+          front-end development and a keen eye for creating visually appealing
+          and user-friendly websites. Armed with Trilogy's Front-End Engineer
+          Certificate from edX and a career-path qualification in Web
+          Development from CodeCademy, I am eager to leverage my technical
+          skills and drive for innovation to contribute to dynamic web projects.
+          With expertise in HTML5, CSS3, JavaScript, and a toolkit that includes
+          ReactJS, jQuery, and Bootstrap, I am ready to transform creative
+          concepts into responsive code. Committed to continuous learning and
+          staying up-to-date with the latest industry trends, I am poised to
+          deliver high-quality web solutions while thriving in collaborative
+          team environments.
+        </p>
       </div>
       <div className="icons-wrapper">
         <div className="icons">
