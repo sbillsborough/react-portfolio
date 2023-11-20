@@ -78,12 +78,15 @@ function Footer() {
       <section>
         <ul className="socials">
           <li>
-            <a href="https://www.linkedin.com/in/scott-billsborough/">
+            <a
+              href="https://www.linkedin.com/in/scott-billsborough/"
+              target="_blank"
+            >
               <i className="fa-brands fa-linkedin"></i>
             </a>
           </li>
           <li>
-            <a href="https://github.com/sbillsborough">
+            <a href="https://github.com/sbillsborough" target="_blank">
               <i className="fa-brands fa-github"></i>
             </a>
           </li>
