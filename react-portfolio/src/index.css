@@ -7,6 +7,7 @@
   --background: #104d73;
   --main: #162b3f;
   --borders: #0e2292;
+  --white-text: #fff;
 }
 
 html,
@@ -25,7 +26,7 @@ body,
 h2 {
   text-align: center;
   margin-top: 30px !important;
-  color: #fff;
+  color: var(--white-text);
 }
 
 /* NavBar styling */
@@ -36,7 +37,7 @@ header {
   align-items: center;
   font-family: "Anton", sans-serif;
   background: var(--background);
-  color: #fff;
+  color: var(--white-text);
   max-width: 1440px;
   height: 50px;
   padding: 0 20px;
@@ -283,7 +284,7 @@ i {
 
 .contact-container h2,
 .contact-wrapper h3 {
-  color: #fff;
+  color: var(--white-text);
 }
 
 .contact-container ul {
@@ -323,7 +324,7 @@ i {
 #form > .email,
 #form > textarea {
   background: var(--main);
-  color: #fff;
+  color: var(--white-text);
 }
 
 #form > button {
@@ -369,7 +370,7 @@ button {
   height: 45px;
   margin: auto !important;
   border: none;
-  border-radius: 12px !important;
+  border-radius: 32px !important;
   background: #5ec1ff;
   color: var(--main);
 }
@@ -380,6 +381,10 @@ button:hover {
 
 button:active {
   transform: translateY(4px);
+}
+
+.success-message {
+  color: var(--white-text);
 }
 
 /* Footer styling */
@@ -409,7 +414,7 @@ ul {
 }
 
 .links a {
-  color: #fff;
+  color: var(--white-text);
   background: linear-gradient(
       to right,
       hsla(216, 98%, 52%, 0),
@@ -423,7 +428,7 @@ ul {
 }
 
 .links a.active {
-  color: #fff;
+  color: var(--white-text);
 }
 
 .links a:hover {
@@ -459,7 +464,7 @@ footer {
 }
 
 .legal {
-  color: #fff;
+  color: var(--white-text);
 }
 
 section {
