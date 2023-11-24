@@ -210,11 +210,13 @@ i {
 }
 
 .btn-primary {
-  background: var(--background) !important;
+  width: 60%;
+  height: 45px;
+  margin: auto !important;
   border: none !important;
-  align-items: center;
-  justify-content: center;
-  height: 55px;
+  border-radius: 32px !important;
+  background: #5ec1ff !important;
+  color: var(--main);
 }
 
 .btn:hover {
