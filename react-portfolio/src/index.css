@@ -529,7 +529,12 @@ section {
   }
 
   footer {
-    height: 125px;
+    height: 225px;
+  }
+
+  section {
+    padding-bottom: 10px;
+    gap: 5px;
   }
 }
 
