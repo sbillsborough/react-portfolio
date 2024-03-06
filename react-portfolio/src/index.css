@@ -24,9 +24,10 @@ body,
 /* Main Styling */
 
 h2 {
+  font-family: "Anton", sans-serif;
+  color: #ffffffcc;
+  margin: 0 auto 20px auto;
   text-align: center;
-  margin-top: 30px !important;
-  color: var(--white-text);
 }
 
 /* NavBar styling */
