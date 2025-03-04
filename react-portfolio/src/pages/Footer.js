@@ -101,7 +101,7 @@ function Footer() {
           <NavLink to="/projects">Projects</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </nav>
-        <p class="legal">&copy; 2023 Scott Billsborough</p>
+        <p class="legal">&copy; 2025 Scott Billsborough</p>
       </section>
     </footer>
   );
