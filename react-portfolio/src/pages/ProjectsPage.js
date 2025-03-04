@@ -63,7 +63,7 @@ const ProjectsPage = ({ name }) => {
 
   return (
     <>
-      <h2>Projects</h2>
+      <h1>Projects</h1>
       <div id="spacecards">
         <div className="flex-row">
           {currentPhotos.map((image, i) => (

@@ -49,15 +49,10 @@ function Contact() {
 
   return (
     <div className="contact-container">
-      <h2>My Information</h2>
+      <h1>My Information</h1>
       <div className="info-wrapper">
         <div className="info-icons">
           <ul>
-            <li>
-              <a href="mailto:billsboroughscott@gmail.com">
-                <i className="fa-regular fa-envelope"></i>
-              </a>
-            </li>
             <li>
               <a
                 href="https://docs.google.com/document/d/1jK2UPUtZUg3-36E1klYv7rK2zEPrgHrOlqdM6zpWD20/edit?usp=sharing"

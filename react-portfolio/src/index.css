@@ -21,12 +21,12 @@ body,
   background: var(--main);
 }
 
-/* Main Styling */
+/* General Styling */
 
-h2 {
+h1 {
   font-family: "Anton", sans-serif;
   color: #ffffffcc;
-  margin: 0 auto 20px auto;
+  margin: 20px auto !important;
   text-align: center;
 }
 
@@ -74,17 +74,11 @@ nav a.active {
 /* Home Page styling */
 
 .home-wrapper {
-  text-align: center;
   margin: 0 auto;
-  padding: 30px 0;
+
   height: auto;
   background: var(--main);
-}
-
-.home-wrapper h1 {
-  font-family: "Anton", sans-serif;
-  color: #ffffffcc;
-  margin: 0 auto 20px auto;
+  text-align: center;
 }
 
 .home-wrapper p {
