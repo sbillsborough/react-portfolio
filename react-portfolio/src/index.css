@@ -21,12 +21,12 @@ body,
   background: var(--main);
 }
 
-/* Main Styling */
+/* General Styling */
 
-h2 {
+h1 {
   font-family: "Anton", sans-serif;
   color: #ffffffcc;
-  margin: 0 auto 20px auto;
+  margin: 20px auto !important;
   text-align: center;
 }
 
@@ -74,25 +74,19 @@ nav a.active {
 /* Home Page styling */
 
 .home-wrapper {
-  text-align: center;
   margin: 0 auto;
-  padding: 30px 0;
 
-  height: 400px;
+  height: auto;
   background: var(--main);
-}
-
-.home-wrapper h1 {
-  font-family: "Anton", sans-serif;
-  color: #ffffffcc;
-  margin: 0 auto 20px auto;
+  text-align: center;
 }
 
 .home-wrapper p {
   font-family: "Satoshi", sans-serif;
   color: #ffffffcc;
   margin: 20px auto;
-  width: 540px;
+  width: 90%;
+  max-width: 540px;
   text-align: left;
 }
 
@@ -105,24 +99,25 @@ nav a.active {
 }
 
 .icons-wrapper {
-  position: absolute;
-  bottom: 370px;
-  width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .icons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   background: var(--background);
   border-radius: 20px;
-  padding: 5px 0;
+  padding: 10px;
 }
 
-i {
+.icons i {
+  font-size: 2rem;
   filter: drop-shadow(0 2px 0.1rem rgb(0, 0, 0));
 }
 
@@ -158,122 +153,6 @@ i {
   color: #171515;
 }
 
-.icons i {
-  font-size: 2rem;
-}
-
-/* Projects Page Styling */
-
-.flex-row {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  flex-wrap: wrap;
-  padding-bottom: 50px;
-  gap: 5px;
-}
-
-/* Project Card Styling */
-#spacecards {
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  padding: 25px;
-}
-
-h2 {
-  color: #f6f6f6;
-}
-
-.card {
-  border: none !important;
-  box-shadow: 2px 2px 5px #999;
-  width: 380px !important;
-  height: 450px !important;
-  margin: 30px auto !important;
-}
-
-.card-img-top {
-  max-height: 200px;
-  object-fit: fill;
-}
-
-.card-text {
-  overflow-y: scroll;
-  height: 120px !important;
-  padding: 5px;
-}
-
-/* Button Styling */
-
-#btns-projects {
-  display: flex;
-  max-height: 40px;
-  justify-content: space-around;
-  gap: 2px;
-}
-
-#btns-projects a {
-  font-size: 0.7rem !important;
-}
-
-.btn-primary {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  width: 40%;
-  height: 45px;
-  padding: 0 !important;
-  border: none !important;
-  border-radius: 32px !important;
-  background: #5ec1ff !important;
-  color: var(--main);
-}
-
-.btn:hover {
-  background: #5ec1ff;
-}
-
-.btn a {
-  text-decoration: none;
-  color: var(--main);
-}
-
-.btn a:hover {
-  color: var(--main);
-}
-
-.btn:active {
-  transform: translateY(4px);
-}
-
-/* My Information Styling */
-
-.info-wrapper {
-  width: 400px;
-  background: var(--background);
-  border-radius: 20px;
-}
-
-.info-icons {
-  display: flex;
-}
-
-.info-wrapper ul {
-  display: flex;
-  list-style-type: none;
-  width: 100%;
-  margin: 0;
-}
-
-.info-wrapper ul li {
-}
-
-.info-wrapper ul li a {
-  font-size: 3rem;
-}
-
 .fa-linkedin {
   color: #0072b1;
 }
@@ -283,8 +162,66 @@ h2 {
 }
 
 .cv {
-  height: 48px;
+  height: 20px;
   background: #fff;
+}
+
+/* Projects Page Styling */
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.card {
+  border: none !important;
+  box-shadow: 2px 2px 5px #999;
+  width: 100%;
+  max-width: 380px !important;
+  height: auto;
+  margin: 30px auto !important;
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-text {
+  overflow-y: scroll;
+  max-height: 120px !important;
+  padding: 5px;
+}
+
+/* Button Styling */
+
+#btns-projects {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 45px;
+  border-radius: 32px !important;
+  background: #5ec1ff !important;
+  color: var(--main);
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: #37b2ff !important;
+}
+
+.btn:active {
+  transform: translateY(4px);
 }
 
 /* Contact Page Styling */
@@ -293,17 +230,12 @@ h2 {
   display: grid;
   justify-content: center;
   text-align: center;
-  width: 100% !important;
+  width: 100%;
 }
 
 .contact-container h2,
 .contact-wrapper h3 {
   color: var(--white-text);
-}
-
-.contact-container ul {
-  padding: 0;
-  justify-content: space-evenly;
 }
 
 #form {
@@ -381,123 +313,50 @@ textarea:focus::placeholder {
 
 button {
   width: 60%;
-  height: 45px;
-  margin: auto !important;
+  margin: auto;
   border: none;
-  border-radius: 32px !important;
+  border-radius: 32px;
   background: #5ec1ff;
   color: var(--main);
 }
 
 button:hover {
-  background: #37b2ff !important;
+  background: #37b2ff;
 }
 
-button:active {
-  transform: translateY(4px);
-}
-
-.success-message {
-  color: var(--white-text);
-}
-
-/* Footer styling */
-
-ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.socials {
-  width: 30%;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.socials a {
-  font-size: 24px;
-}
-
-.links {
-  text-align: center;
-  z-index: 1;
-  gap: 10px;
-}
-
-.links a {
-  color: var(--white-text);
-  background: linear-gradient(
-      to right,
-      hsla(216, 98%, 52%, 0),
-      hsla(216, 98%, 52%, 0)
-    ),
-    linear-gradient(to right, #fff, #fff, #fff);
-  background-size: 100% 0.1em, 0 0.1em;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 300ms;
-}
-
-.links a.active {
-  color: var(--white-text);
-}
-
-.links a:hover {
-  color: #ffffff9f;
-}
-
-.legal {
-  text-align: center;
-  font-size: 12px;
-  margin: 0;
-}
-
-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: scaleY(3) scaleX(2.25);
-  transform-origin: bottom;
-  box-sizing: border-box;
-  display: block;
-  pointer-events: none;
-}
+/* Footer Styling */
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 370px;
+  height: auto;
+  padding: 20px;
+  background: var(--background);
+  text-align: center;
 }
 
 .legal {
   color: var(--white-text);
+  font-size: 12px;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 20px;
-  padding: 0 60px 30px 60px;
-  width: 100%;
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  .icons i {
+    font-size: 1.5rem;
+  }
+  .info-wrapper {
+    width: 100%;
+  }
 }
-
-/* MEDIA QUERIES */
-
-/* Nav Bar and Homepage */
 
 @media only screen and (max-width: 490px) {
   header h3 {
     font-size: 1.2rem;
-    margin: 0;
   }
 
   nav a {
@@ -509,105 +368,11 @@ section {
     width: 150px;
   }
 
-  .home-wrapper p {
-    padding: 20px;
-  }
-
-  .icons {
-    padding: 25px;
-  }
-
   .card {
-    max-width: 80vw;
-  }
-
-  .contact-container {
-  }
-
-  .info-wrapper {
-    width: 100%;
-  }
-
-  .info-icons ul li i {
-    font-size: 2.3rem;
+    max-width: 100%;
   }
 
   #form {
-    padding: 0 30px 0 30px;
-  }
-
-  footer {
-    height: 225px;
-  }
-
-  section {
-    padding-bottom: 10px;
-    gap: 5px;
-  }
-}
-
-@media only screen and (max-width: 394px) {
-  header h3 {
-    font-size: 1rem !important;
-    margin: 0;
-  }
-
-  nav a {
-    font-size: 0.9rem !important;
-  }
-
-  .icons {
-    gap: 5px;
-    margin: auto;
-  }
-
-  .card {
-    max-width: 80vw;
-  }
-
-  .contact-container {
-    width: 100vw;
-  }
-
-  .info-wrapper {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  ul {
-    gap: 20px;
-  }
-
-  #form {
-    padding: 0 60px 0 60px !important;
-    grid-template-areas:
-      "name"
-      "email"
-      "textarea"
-      "button";
-
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 50px);
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  #root {
-    font-size: 0.8rem;
-  }
-
-  .icons i {
-    font-size: 25px;
-  }
-
-  button {
-    width: 50%;
-    height: 70%;
-  }
-
-  .btn {
-    font-size: 0.7rem !important;
-    height: 3rem;
-    width: 6rem;
   }
 }
