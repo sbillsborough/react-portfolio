@@ -30,6 +30,10 @@ h1 {
   text-align: center;
 }
 
+.background {
+  width: 100% !important;
+}
+
 /* NavBar styling */
 
 header {
@@ -332,10 +336,6 @@ button:hover {
 /* Footer Styling */
 
 footer {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: auto;
   padding: 20px;
@@ -346,6 +346,19 @@ footer {
 .legal {
   color: var(--white-text);
   font-size: 12px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* width: 100vw; */
+}
+
+.background {
+  width: 100vw;
 }
 
 /* Media Queries */
