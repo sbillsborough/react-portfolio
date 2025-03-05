@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <footer>
-      <div class="background">
+      <div className="background">
         <svg
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -74,35 +74,36 @@ function Footer() {
             </use>
           </g>
         </svg>
+
+        <section>
+          <ul className="socials">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/scott-billsborough/"
+                target="_blank"
+              >
+                <i className="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/sbillsborough" target="_blank">
+                <i className="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:billsboroughscott@gmail.com">
+                <i className="fa-regular fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+          <nav className="links">
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/projects">Projects</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
+          </nav>
+          <p className="legal">&copy; 2025 Scott Billsborough</p>
+        </section>
       </div>
-      <section>
-        <ul className="socials">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/scott-billsborough/"
-              target="_blank"
-            >
-              <i className="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/sbillsborough" target="_blank">
-              <i className="fa-brands fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:billsboroughscott@gmail.com">
-              <i className="fa-regular fa-envelope"></i>
-            </a>
-          </li>
-        </ul>
-        <nav className="links">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
-        </nav>
-        <p class="legal">&copy; 2025 Scott Billsborough</p>
-      </section>
     </footer>
   );
 }
