@@ -101,7 +101,6 @@ nav a.active {
 .icons-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
 }
 
 .icons {
@@ -111,9 +110,6 @@ nav a.active {
   align-items: center;
   width: 100%;
   max-width: 800px;
-  background: var(--background);
-  border-radius: 20px;
-  padding: 10px;
 }
 
 .icons i {
@@ -338,14 +334,16 @@ button:hover {
   justify-content: center;
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 200px;
 }
 
 footer {
   width: 100%;
-  height: 100%;
-  background: var(--background);
+  height: auto;
+  background: var(--main);
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .legal {
@@ -367,14 +365,17 @@ svg {
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   z-index: 0;
   opacity: 0.9;
+  pointer-events: none;
 }
 
 section {
   position: relative;
   z-index: 2;
   width: 100%;
+  backdrop-filter: blur(10px);
 }
 
 /* Media Queries */
