@@ -59,11 +59,13 @@ function Contact() {
                 target="_blank"
               >
                 <img src={cv} className="cv" alt="CV Icon" />
+                <p>CV</p>
               </a>
             </li>
             <li>
               <a href="https://github.com/sbillsborough" target="_blank">
                 <i className="fa-brands fa-github"></i>
+                <p>GitHub</p>
               </a>
             </li>
             <li>
@@ -72,6 +74,7 @@ function Contact() {
                 target="_blank"
               >
                 <i className="fa-brands fa-linkedin"></i>
+                <p>LinkedIn</p>
               </a>
             </li>
           </ul>
