@@ -213,6 +213,11 @@ nav a.active {
   border-radius: 32px !important;
   background: #5ec1ff !important;
   color: var(--main);
+}
+
+.btn-primary a {
+  display: flex;
+  font-size: 0.7rem;
   text-decoration: none;
 }
 
