@@ -346,17 +346,40 @@ footer {
   overflow: hidden;
 }
 
-.legal {
-  color: var(--white-text);
-  font-size: 12px;
+section {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  backdrop-filter: blur(10px);
 }
 
 .socials {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.socials i {
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+.socials i:hover {
+  transform: scale(1.2);
+}
+
+.links {
+  margin: 10px;
+}
+
+.legal {
+  color: var(--white-text);
+  font-size: 12px;
+  margin: 0;
 }
 
 svg {
@@ -369,13 +392,6 @@ svg {
   z-index: 0;
   opacity: 0.9;
   pointer-events: none;
-}
-
-section {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  backdrop-filter: blur(10px);
 }
 
 /* Media Queries */
