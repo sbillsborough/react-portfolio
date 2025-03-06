@@ -55,12 +55,11 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: "Anton", sans-serif;
-  background: var(--background);
+  background: var(--main);
   color: var(--white-text);
   max-width: 1440px;
   height: 50px;
-  padding: 0 20px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 header h3 {
@@ -78,7 +77,7 @@ nav a {
 }
 
 nav a:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 60px;
 }
 
 nav a.active {
@@ -89,17 +88,10 @@ nav a.active {
   display: none;
 }
 
-/* Banner styling */
-
-.banner {
-  margin-bottom: 20px;
-}
-
 /* Home Page styling */
 
 .home-wrapper {
   margin: 0 auto;
-
   height: auto;
   background: var(--main);
   text-align: center;
@@ -120,6 +112,7 @@ nav a.active {
   height: 250px;
   width: 250px;
   object-fit: cover;
+  margin: 20px 0 0 0;
 }
 
 .icons-wrapper {
@@ -139,6 +132,7 @@ nav a.active {
 .icons i {
   font-size: 2rem;
   filter: drop-shadow(0 2px 0.1rem rgb(0, 0, 0));
+  z-index: 1;
 }
 
 .fa-html5 {
@@ -462,6 +456,10 @@ svg {
 
   nav a {
     font-size: 1rem;
+  }
+
+  nav a:not(:last-child) {
+    margin-right: 30px;
   }
 
   .home-wrapper img {

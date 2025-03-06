@@ -12,8 +12,8 @@ function App() {
   return (
     <>
       <main>
-        <Header />
         <Banner />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ProjectsPage />} />
