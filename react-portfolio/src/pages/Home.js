@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       <div className="home-wrapper">
-        <h1>Web Developer</h1>
+        {/* <h1>Web Developer</h1> */}
         <img src={headshot} className="headshot" alt="Scott Billsborough" />
 
         <p>
