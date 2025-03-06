@@ -7,6 +7,7 @@ import three from "../resources/img/3.png";
 import four from "../resources/img/4.png";
 import five from "../resources/img/5.png";
 import six from "../resources/img/6.png";
+import seven from "../resources/img/7.png";
 
 const ProjectsPage = ({ name }) => {
   const [photos] = useState([
@@ -20,6 +21,14 @@ const ProjectsPage = ({ name }) => {
     },
     {
       src: two,
+      title: "Barber Shop Site",
+      description:
+        "A responsive animated barbershop brochure site with nav bar and functioning icons/menus.",
+      linkApp: "https://sbillsborough.github.io/barber-shop-site/",
+      linkGithub: "https://github.com/sbillsborough/barber-shop-site",
+    },
+    {
+      src: three,
       title: "Random Password Generator",
       description:
         "A random password generator that produces a password based on the users requirments. These include required length, upper/lowercase characters, special characters and numbers. Also checks to see if the password is at least 10 characters long.",
@@ -27,7 +36,7 @@ const ProjectsPage = ({ name }) => {
       linkGithub: "https://github.com/sbillsborough/random-password-generator",
     },
     {
-      src: three,
+      src: four,
       title: "Weather Dashboard",
       description:
         "A weather report dashboard that displays the current date. Allows the user to search for the current and 5 day weather in the city of their choice. Stores the search history and creates a button that allows the user to easily click and bring up the previous search history.",
@@ -35,7 +44,7 @@ const ProjectsPage = ({ name }) => {
       linkGithub: "https://github.com/sbillsborough/weather-dashboard",
     },
     {
-      src: four,
+      src: five,
       title: "Team Profile Generator",
       description:
         "A command line app that prompts users then creates team members of a software development company based on their response.",
@@ -43,14 +52,14 @@ const ProjectsPage = ({ name }) => {
       linkGithub: "https://github.com/sbillsborough/team-profile-generator",
     },
     {
-      src: five,
+      src: six,
       title: "Bootstrap Portfolio",
       description: "A Web Developer Portfolio built in Bootstrap.",
       linkApp: "https://sbillsborough.github.io/Bootstrap-Portfolio/",
       linkGithub: "https://github.com/sbillsborough/Bootstrap-Portfolio",
     },
     {
-      src: six,
+      src: seven,
       title: "Music App",
       description:
         "A web app that allows users to search for a song, artist or band and see a dynamically generated link to a relevant YouTube video to said song/musician. We also display 5 similarly named artists in the 'Similar to your search' section.",
