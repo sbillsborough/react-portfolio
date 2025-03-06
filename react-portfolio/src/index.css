@@ -369,6 +369,12 @@ button:hover {
   background: #37b2ff;
 }
 
+.success-message {
+  color: var(--white-text);
+  text-wrap: pretty;
+  max-width: 380px;
+}
+
 /* Footer Styling */
 
 .background {
@@ -478,5 +484,9 @@ svg {
   #form {
     display: flex;
     flex-direction: column;
+  }
+
+  .success-message {
+    max-width: 225px;
   }
 }
