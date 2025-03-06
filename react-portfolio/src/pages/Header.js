@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <header>
-      <h3>Scott Billsborough</h3>
+      {/* <h3>Scott Billsborough</h3> */}
 
       <div className="navbar">
         <nav>

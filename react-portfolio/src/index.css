@@ -55,12 +55,11 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: "Anton", sans-serif;
-  background: var(--background);
+  background: var(--main);
   color: var(--white-text);
   max-width: 1440px;
   height: 50px;
-  padding: 0 20px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 header h3 {
@@ -78,7 +77,7 @@ nav a {
 }
 
 nav a:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 60px;
 }
 
 nav a.active {
@@ -87,12 +86,6 @@ nav a.active {
 
 .fa-bars {
   display: none;
-}
-
-/* Banner styling */
-
-.banner {
-  margin-bottom: 20px;
 }
 
 /* Home Page styling */
@@ -119,6 +112,7 @@ nav a.active {
   height: 250px;
   width: 250px;
   object-fit: cover;
+  margin: 20px 0 0 0;
 }
 
 .icons-wrapper {
@@ -462,6 +456,10 @@ svg {
 
   nav a {
     font-size: 1rem;
+  }
+
+  nav a:not(:last-child) {
+    margin-right: 30px;
   }
 
   .home-wrapper img {
