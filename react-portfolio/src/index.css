@@ -99,7 +99,6 @@ nav a.active {
 
 .home-wrapper {
   margin: 0 auto;
-
   height: auto;
   background: var(--main);
   text-align: center;
@@ -139,6 +138,7 @@ nav a.active {
 .icons i {
   font-size: 2rem;
   filter: drop-shadow(0 2px 0.1rem rgb(0, 0, 0));
+  z-index: 1;
 }
 
 .fa-html5 {
