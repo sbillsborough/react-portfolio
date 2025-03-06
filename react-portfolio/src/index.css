@@ -189,27 +189,43 @@ nav a.active {
   flex-wrap: wrap;
 }
 
-.card {
+.flex-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.custom-card {
   border: none !important;
-  box-shadow: 1px 1px 2px #999;
+  box-shadow: 1px 1px 6px #999;
   width: 100%;
-  max-width: 380px !important;
-  height: auto;
+  max-width: 380px;
+  height: 500px;
   margin: 30px auto !important;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-img-top {
-  max-height: 200px;
+  height: 200px;
   object-fit: cover;
 }
 
-.card-text {
-  overflow-y: scroll;
-  max-height: 120px !important;
-  padding: 5px;
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* Button Styling */
+.card-text {
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: 150px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
 
 #btns-projects {
   display: flex;
@@ -226,12 +242,16 @@ nav a.active {
   border-radius: 32px !important;
   background: #5ec1ff !important;
   color: var(--main);
+  text-align: center;
+  padding: 0 10px;
 }
 
 .btn-primary a {
-  display: flex;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-decoration: none;
+  color: inherit;
+  text-align: center;
+  line-height: 2;
 }
 
 .btn-primary:hover {
