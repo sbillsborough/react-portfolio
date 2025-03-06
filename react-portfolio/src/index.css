@@ -109,7 +109,7 @@ nav a.active {
 }
 
 .headshot {
-  border: 2px solid #a0a0a0;
+  border: 2px solid var(--background);
   border-radius: 50%;
   height: 250px;
   width: 250px;
