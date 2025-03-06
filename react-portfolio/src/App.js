@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import ProjectsPage from "./pages/ProjectsPage";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
+import Banner from "./pages/Banner";
 
 // Base App function to bring in the components and routes
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <>
       <main>
         <Header />
+        <Banner />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ProjectsPage />} />

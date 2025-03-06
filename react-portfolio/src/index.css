@@ -89,6 +89,12 @@ nav a.active {
   display: none;
 }
 
+/* Banner styling */
+
+.banner {
+  margin-bottom: 20px;
+}
+
 /* Home Page styling */
 
 .home-wrapper {
