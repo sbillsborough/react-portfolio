@@ -10,15 +10,33 @@
   --white-text: #fff;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
-body,
-#root {
+body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
   font-family: "Satoshi", sans-serif;
   background: var(--main);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--main);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /* General Styling */
@@ -42,7 +60,7 @@ header {
   max-width: 1440px;
   height: 50px;
   padding: 0 20px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 header h3 {
@@ -91,7 +109,7 @@ nav a.active {
 }
 
 .headshot {
-  border: 2px solid #a0a0a0;
+  border: 2px solid var(--background);
   border-radius: 50%;
   height: 250px;
   width: 250px;
@@ -169,12 +187,11 @@ nav a.active {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  padding-bottom: 50px;
 }
 
 .card {
   border: none !important;
-  box-shadow: 2px 2px 5px #999;
+  box-shadow: 1px 1px 2px #999;
   width: 100%;
   max-width: 380px !important;
   height: auto;
@@ -226,6 +243,33 @@ nav a.active {
 }
 
 /* Contact Page Styling */
+
+.info-icons ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.info-icons li {
+  list-style: none;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+.info-icons li:hover {
+  transform: scale(1.2);
+}
+
+.info-icons a {
+  text-decoration: none;
+}
+
+.info-icons p {
+  color: white;
+  font-size: 1rem;
+}
 
 .contact-container {
   display: grid;
@@ -312,7 +356,7 @@ textarea:focus::placeholder {
   color: transparent;
 }
 
-button {
+#form button {
   width: 60%;
   margin: auto;
   border: none;
@@ -424,6 +468,7 @@ svg {
   }
 
   #form {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 }
