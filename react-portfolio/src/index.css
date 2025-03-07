@@ -312,7 +312,7 @@ nav a.active {
     "button button ";
 
   grid-template-columns: repeat(2, 220px);
-  grid-template-rows: repeat(3, 50px);
+  grid-template-rows: auto auto 50px;
 }
 
 #form > h3 {
@@ -329,6 +329,8 @@ nav a.active {
 
 #form > textarea {
   grid-area: textarea;
+  min-height: 150px;
+  resize: vertical;
 }
 
 #form > .name,
